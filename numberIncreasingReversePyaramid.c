@@ -5,9 +5,9 @@ int main()
     printf("Enter Number: ");
     scanf("%d", &number);
 
-    for (int i = number; i <= 1; i--)
+    for (int i = number; i >= 1; i--)
     {
-        for (int j = number; j >= i; j--)
+        for (int j = 1; j <= i; j++)
         {
             printf("%d", j);
         }
