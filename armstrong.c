@@ -24,4 +24,5 @@ void checkArmstrong(int number)
 int main()
 {
     checkArmstrong(153);
+    return 0;
 }
