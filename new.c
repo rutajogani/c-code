@@ -1,26 +1,28 @@
 #include <stdio.h>
+void checkArmstrong(int number)
+{
+    int sum = 0;
+    int ans = number;
+
+    while (number != 0)
+    {
+        int singleDigit = number % 10;
+        sum = sum * 10 +(singleDigit * singleDigit * singleDigit);
+        number = number / 10;
+    }
+
+    if (ans = sum)
+    {
+        printf("This Number Is Armstrong");
+    }
+    else
+    {
+        printf("This Number Is Normal");
+    }
+}
+
 int main()
 {
-    int number;
-    printf("Enter Number: ");
-    scanf("%d", &number);
-
-    for (int i = 1; i <= number; i++)
-    {
-        for (int j = 1; j <= number + 10; j++)
-        {
-            if (j(i +j) % 2 == 0)
-            {
-                printf(" ");
-            }else
-            {
-                printf("*");
-            }
-        }
-        printf("\n");
-        
-    }
-    
-    
+    checkArmstrong(11);
     return 0;
 }
