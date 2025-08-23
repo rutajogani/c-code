@@ -7,7 +7,7 @@ void checkArmstrong(int number)
     while (number != 0)
     {
         int singleDigit = number % 10;
-        sum = sum * 10 +(singleDigit * singleDigit * singleDigit);
+        sum = sum * 10 + singleDigit;
         number = number / 10;
     }
 
@@ -23,6 +23,6 @@ void checkArmstrong(int number)
 
 int main()
 {
-    checkArmstrong(11);
+    checkArmstrong(145);
     return 0;
 }
